@@ -1,0 +1,38 @@
+import { createTask } from "./createTask.js";
+import { render, renderDate } from "./render.js";
+
+const modal = document.querySelector(".modal");
+const shadow = document.querySelector(".shadow");
+const openModal = document.querySelector(".todo__info-btn");
+const inputTitle = document.querySelector(".inputTitle");
+const inputDate = document.querySelector(".inputDate");
+const inputTime = document.querySelector(".inputTime");
+const addTask = document.querySelector(".addTask");
+const containerTasks = document.querySelector(".todo__tasks");
+const infoDate = document.querySelector(".todo__info-date");
+const inputDateRender = document.querySelector(".todo__inputDate");
+
+inputDateRender.addEventListener("change", (ev) =>{
+    renderDate(containerTasks, ev.target.value);
+})
+
+
+openModal.addEventListener("click", () =>{
+    modal.classList.add("active")
+})
+
+shadow.addEventListener("click", () =>{
+    modal.classList.remove("active")
+})
+
+render(containerTasks, infoDate)
+
+
+
+addTask.addEventListener("click", () =>{
+    // console.log(inputTitle.value, inputDate.value, inputTime.value)
+
+    createTask(inputTitle.value, inputDate.value, inputTime.value)
+})
+
+

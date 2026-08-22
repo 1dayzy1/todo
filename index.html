@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo</title>
+</head>
+
+<body>
+
+    <div class="modal">
+
+        <div class="shadow"></div>
+        <div class="content">
+
+            <h2 class="title">Новая задача</h2>
+            <label for="title">
+                <p>Название задачи</p>
+                <input type="text" class="inputTitle" id="title" placeholder="Опишите задачу...">
+            </label>
+
+            <div class="block-date">
+                <label for="date">
+                    <p>Выберите дату:</p>
+                    <input type="date" class="inputDate" id="description">
+                </label>
+
+                <label for="time">
+                    <p>Выберите время:</p>
+                    <input type="time" class="inputTime" id="time">
+                </label>
+            </div><br>
+
+            <button class="addTask">Добавить</button>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="page">
+
+        <div class="todo">
+
+            <div class="header__todo">
+
+                <h1 class="header__todo-title">FrontendByHeart - TodoList</h1>
+                <h1 class="header__todo-login">Dmitriy</h1>
+
+
+
+            </div>
+
+            <div class="todo__block">
+
+                <h2 class="todo__title">Мои задачи</h2>
+
+                <label for="date">
+                    <p>Выберите дату:</p>
+                    <input type="date" class="todo__inputDate" id="date">
+                </label>
+
+
+                <div class="todo__info">
+
+                    <p class="todo__info-date">Суббота, 22 августа </p>
+
+                    <button class="todo__info-btn">+ Добавить</button>
+
+                </div>
+
+
+                <div class="todo__tasks">
+
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js" type="module"></script>
+    <script src="createTask.js" type="module"></script>
+
+</body>
+
+</html>
