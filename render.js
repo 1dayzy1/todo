@@ -9,7 +9,7 @@ export const render = async (containerTasks, infoDate) => {
 
     // console.log(date.getMonth())
 
-    const res = await fetch("http://localhost:3000/api/get/task?date=" + todayDate);
+    const res = await fetch("http://195.209.218.24:3000/api/get/task?date=" + todayDate);
     const { task } = await res.json();
 
     // console.log(task)
@@ -113,7 +113,7 @@ export const renderDate = async(containerTasks, date) =>{
     // console.log(date);
     containerTasks.textContent = ''
 
-    const res = await fetch("http://localhost:3000/api/get/task?date=" + date);
+    const res = await fetch("http://195.209.218.24:3000/api/get/task?date=" + date);
     const { task } = await res.json();
 
     // console.log(task)

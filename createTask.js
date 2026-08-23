@@ -1,7 +1,7 @@
 export const createTask = async(title, date, time) =>{
     // console.log(title, date, time);
 
-    const res = await fetch('http://localhost:3000/api/create/task', {
+    const res = await fetch('http://195.209.218.24:3000/api/create/task', {
         method:"POST",
         headers:{
             "Content-type":"application/json"
