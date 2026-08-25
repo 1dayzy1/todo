@@ -32,7 +32,7 @@ render(containerTasks, infoDate)
 addTask.addEventListener("click", () =>{
     // console.log(inputTitle.value, inputDate.value, inputTime.value)
 
-    createTask(inputTitle.value, inputDate.value, inputTime.value)
+    createTask(inputTitle.value, inputDate.value, inputTime.value, modal, containerTasks, infoDate)
 })
 
 
