@@ -9,7 +9,7 @@ export const render = async (containerTasks, infoDate) => {
 
     // console.log(date.getMonth())
     
-
+// 195.209.218.24
 
     const res = await fetch("http://195.209.218.24:3000/api/get/task?date=" + todayDate);
     const { task } = await res.json();
@@ -134,7 +134,7 @@ export const renderDate = async(containerTasks, date) =>{
         card.innerHTML = `
 
         <h1 class="todo__tasks-taskCard-title">${el.title} </h1>
-        <div class="todo__tasks-taskCard-time">${el.time}</div>
+        <div class="todo__tasks-taskCard-time">${el.startTime}-${el.endTime}</div>
 
         `
 
