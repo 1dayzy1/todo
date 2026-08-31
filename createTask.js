@@ -1,9 +1,11 @@
 import { render } from "./render.js";
 
-export const createTask = async(title, date, time, modal, containerTasks, infoDate) =>{
+export const createTask = async(title, date, startTime, endTime,  modal, containerTasks, infoDate) =>{
     // console.log(title, date, time);
 
-    const res = await fetch('http://195.209.218.24:3000/api/create/task', {
+    const host = '195.209.218.24'
+
+    const res = await fetch('http://localhost:3000/api/create/task', {
         method:"POST",
         headers:{
             "Content-type":"application/json"
@@ -11,7 +13,8 @@ export const createTask = async(title, date, time, modal, containerTasks, infoDa
         body:JSON.stringify({
             title,
             date,
-            time
+            startTime,
+            endTime
         })
     })
 
