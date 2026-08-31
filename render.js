@@ -8,10 +8,10 @@ export const render = async (containerTasks, infoDate) => {
     // console.log(todayDate);
 
     // console.log(date.getMonth())
-    const host = '195.209.218.24'
+    
 
 
-    const res = await fetch("http://localhost:3000/api/get/task?date=" + todayDate);
+    const res = await fetch("http://195.209.218.24:3000/api/get/task?date=" + todayDate);
     const { task } = await res.json();
 
     // console.log(task)
