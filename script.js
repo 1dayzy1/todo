@@ -1,5 +1,5 @@
 import { createTask } from "./createTask.js";
-import { render, renderDate } from "./render.js";
+import { render, renderDate, renderUsers } from "./render.js";
 
 const modal = document.querySelector(".modal");
 const shadow = document.querySelector(".shadow");
@@ -10,6 +10,7 @@ const startTime = document.querySelector(".startTime");
 const endTime = document.querySelector(".endTime");
 const addTask = document.querySelector(".addTask");
 const containerTasks = document.querySelector(".todo__tasks");
+const containerUsers = document.querySelector(".container-users");
 const infoDate = document.querySelector(".todo__info-date");
 const inputDateRender = document.querySelector(".todo__inputDate");
 
@@ -28,7 +29,7 @@ shadow.addEventListener("click", () =>{
 
 render(containerTasks, infoDate)
 
-
+renderUsers(containerUsers, inputTitle);
 
 addTask.addEventListener("click", () =>{
     // console.log(inputTitle.value, inputDate.value, inputTime.value)

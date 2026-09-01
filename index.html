@@ -21,6 +21,16 @@
                 <input type="text" class="inputTitle" id="title" placeholder="Опишите задачу...">
             </label>
 
+            <div class="container-users">
+
+                <!-- <button class="userBtn">Dima <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg></span></button> -->
+
+            </div>
+
             <div class="block-date">
                 <label for="date">
                     <p>Выберите дату:</p>
@@ -32,13 +42,33 @@
                     <input type="time" class="inputTime startTime" id="time">
                 </label>
 
-                 <label for="time">
+                <label for="time">
                     <p>Конец:</p>
                     <input type="time" class="inputTime endTime" id="time">
                 </label>
             </div><br>
 
             <button class="addTask">Добавить</button>
+
+
+        </div>
+
+    </div>
+
+    <div class="modal-students">
+
+        <div class="shadow shadowUser"></div>
+        <div class="content">
+
+            <h2 class="title">Новый ученик</h2>
+            <label for="title">
+                <p>Введите имя:</p>
+                <input type="text" class="inputTitle inputName" id="title" placeholder="Введите имя">
+            </label>
+
+
+
+            <button class="addTask addUser">Добавить</button>
 
 
         </div>
@@ -74,6 +104,7 @@
                     <p class="todo__info-date">Суббота, 22 августа </p>
 
                     <button class="todo__info-btn">+ Добавить</button>
+                    <button class="todo__info-btn openUser">+ Добавить Ученика</button>
 
                 </div>
 
@@ -93,11 +124,12 @@
     </div>
 
 
-    
+
 
 
     <script src="script.js" type="module"></script>
     <script src="createTask.js" type="module"></script>
+    <script src="user.js" type="module"></script>
 
 </body>
 
