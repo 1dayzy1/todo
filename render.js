@@ -43,51 +43,51 @@ export const render = async (containerTasks, infoDate) => {
 
     switch (date.getMonth()) {
         case 0:
-            month = "Январь";
+            month = "Января";
             break;
 
         case 1:
-            month = "Февраль";
+            month = "Февраля";
             break;
 
         case 2:
-            month = "Март";
+            month = "Марта";
             break;
 
         case 3:
-            month = "Апрель";
+            month = "Апреля";
             break;
 
         case 4:
-            month = "Май";
+            month = "Мая";
             break;
 
         case 5:
-            month = "Июнь";
+            month = "Июня";
             break;
 
         case 6:
-            month = "Июль";
+            month = "Июля";
             break;
 
         case 7:
-            month = "Август";
+            month = "Августа";
             break;
 
         case 8:
-            month = "Сентябрь";
+            month = "Сентября";
             break;
 
         case 9:
-            month = "Октябрь";
+            month = "Октября";
             break;
 
         case 10:
-            month = "Ноябрь";
+            month = "Ноября";
             break;
 
         case 11:
-            month = "Декабрь";
+            month = "Декабря";
             break;
     }
 
