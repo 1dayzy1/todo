@@ -3,12 +3,13 @@ const modal_students = document.querySelector(".modal-students");
 const shadow = document.querySelector(".shadowUser");
 const openUser = document.querySelector(".openUser");
 const inputName = document.querySelector(".inputName");
+const inputUserName = document.querySelector(".inputNameTelegram");
 const addBtn = document.querySelector(".addUser");
 
 
 
-const addUser = async(username) =>{
-    console.log(username);
+const addUser = async(name, username) =>{
+    console.log(name, username);
 
     const req = await fetch("http://195.209.218.24:3000/api/create/student/",{
         method:"POST",
@@ -17,6 +18,7 @@ const addUser = async(username) =>{
         },
 
         body:JSON.stringify({
+            name,
             username
         })
     })
@@ -47,7 +49,7 @@ export const deleteUser = async(userId) =>{
 
 
 addBtn.addEventListener("click", () =>{
-    addUser(inputName.value)
+    addUser(inputName.value, inputUserName.value)
 })
 
 

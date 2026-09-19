@@ -33,8 +33,9 @@ renderUsers(containerUsers, inputTitle);
 
 addTask.addEventListener("click", () =>{
     // console.log(inputTitle.value, inputDate.value, inputTime.value)
+    // console.log(inputTitle.dataset.username)
 
-    createTask(inputTitle.value, inputDate.value, startTime.value, endTime.value, modal, containerTasks, infoDate)
+    createTask(inputTitle.value, inputDate.value, startTime.value, endTime.value, modal, containerTasks, infoDate, inputTitle.dataset.username)
 })
 
 

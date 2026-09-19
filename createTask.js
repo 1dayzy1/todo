@@ -1,6 +1,6 @@
 import { render } from "./render.js";
 
-export const createTask = async(title, date, startTime, endTime,  modal, containerTasks, infoDate) =>{
+export const createTask = async(title, date, startTime, endTime,  modal, containerTasks, infoDate, username) =>{
     // console.log(title, date, time);
 
     const res = await fetch('http://195.209.218.24:3000/api/create/task', {
@@ -12,7 +12,8 @@ export const createTask = async(title, date, startTime, endTime,  modal, contain
             title,
             date,
             startTime,
-            endTime
+            endTime,
+            username
         })
     })
 

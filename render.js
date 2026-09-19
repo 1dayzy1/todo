@@ -25,7 +25,7 @@ export const render = async (containerTasks, infoDate) => {
 
         card.innerHTML = `
 
-        <h1 class="todo__tasks-taskCard-title">${el.title} </h1>
+        <a href='https://t.me/${el.username}?text=Добрый день, напоминаю сегодня в ${el.startTime} пройдет наш урок' class="todo__tasks-taskCard-title">${el.title} </a>
         <div class="todo__tasks-taskCard-time">${el.startTime}-${el.endTime}</div>
 
         `
@@ -170,6 +170,7 @@ export const renderUsers = async(containerUsers, inputTitle) =>{
 
         btn.querySelector(".login").addEventListener("click", () =>{
             inputTitle.value = `Урок с ${user.name}`
+            inputTitle.dataset.username = user.username
         })
 
         btn.querySelector(".deleteUser").addEventListener("click", (ev) =>{
