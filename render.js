@@ -134,7 +134,7 @@ export const renderDate = async(containerTasks, date) =>{
 
         card.innerHTML = `
 
-        <h1 class="todo__tasks-taskCard-title">${el.title} </h1>
+        <a href='https://t.me/${el.username}?text=Добрый день, напоминаю сегодня в ${el.startTime} пройдет наш урок' class="todo__tasks-taskCard-title">${el.title} </ф>
         <div class="todo__tasks-taskCard-time">${el.startTime}-${el.endTime}</div>
 
         `
